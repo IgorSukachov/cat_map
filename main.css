@@ -1,0 +1,63 @@
+.cats-block {
+    padding: 20px;
+    margin: 50px auto;
+    bottom: 0;
+    width: 300px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #777;
+    border-radius: 10px;
+    border: 1px wsolid #cc00c0;
+    box-shadow: 0 0 10px #cc00c0;
+}
+
+.cat {
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+}
+
+.description > img {
+    width: 30%;
+    margin: 20px auto;
+}
+
+.position {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-down {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background: #cc00c0;
+    cursor: pointer;
+}
+
+.arrow-down::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    left: 2px;
+    top: 2px;
+}
+
+.hide {
+    height: 0;
+    overflow: hidden;
+}
+
+
+.close.arrow-down::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    left: -2px;
+    top: -2px;
+}
